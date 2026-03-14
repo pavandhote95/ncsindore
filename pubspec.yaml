@@ -1,0 +1,119 @@
+name: cuickdevuser
+description: A new Flutter project.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.3+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0" # Keep this as your current SDK constraint
+
+dependencies:
+  flutter:
+    sdk: flutter
+  get: ^4.6.6
+  cupertino_icons: # Your current version
+
+  # Core Network & Utility
+  http: # Added specific version to resolve conflicts, ensure this is compatible with others
+  shared_preferences: # Your current version
+  url_launcher: # Added version
+  connectivity_plus: # Added version
+  mime: # Added version
+  email_validator: # Added version
+
+  # UI/UX & Animations
+  animated_splash_screen: # Added version
+  loading_overlay: # Added version
+  rflutter_alert: # Added version
+  cherry_toast: # Added version
+  flutter_svg: # Added version (latest may vary)
+  flutter_switch: # Added version
+  fl_chart: # Added version
+  rive: # <<< UPDATED to resolve http conflict (check pub.dev for latest)
+  animated_bottom_navigation_bar: # Your current version
+  auto_size_text: # Added version
+  buttons_tabbar: # Added version
+  flutter_swipe_button: # Your current version
+  toastification: # Added version
+  loading_animation_widget: # Your current version
+  syncfusion_flutter_charts: # Added version
+  zoom_widget: # Your current version
+  super_tooltip: # Your current version
+  two_dimensional_scrollables: # Your current version
+  dropdown_model_list: # Your current version
+  dropdownfield2: # Your current version
+  scrollable_positioned_list: # Added version (latest may vary)
+
+  # QR Code & Image Handling
+  qr_code_scanner_plus: # <<< UPDATED
+  image_picker: # Added version
+  image_cropper: # Your current version, should be fine with rive update
+  flutter_image_compress: # Added version
+  cached_network_image: # Added version
+  file_picker:
+  mobile_scanner: ^7.1.4 # Added version
+
+  # PDF & Document Handling
+  pdf: # Your current version
+  open_file: # Your current version
+  printing: # Your current version
+  binary_codec: # Your current version
+  csv: # Your current version
+  excel: # Added version
+  path_provider: # Added version
+  permission_handler: # Added version
+  syncfusion_flutter_xlsio: # Added version
+
+  # HTML & Webviewtabl
+  flutter_html: # Added version (latest may vary)
+  expressions: # Added version
+  flutter_widget_from_html: # Your current version
+  webview_flutter:
+
+  # SVG & Vector Graphics
+  flutter_svg_provider: # Your current version
+  vector_graphics: # Added version (latest may vary)
+
+  # Location & Theme
+  location: # Added version
+  adaptive_theme: # Your current version
+
+  # Time & Date
+  intl: ^0.19.0 # Added version
+  wifi_scan:
+  geolocator:
+  android_id: ^0.5.1
+  motion_toast: ^2.15.0
+  camera:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/icons/facebook.png
+    - assets/images/icons/google.png
+    - assets/images/icons/linkedin.png
+    - assets/Backgrounds/
+    - assets/icons/
+    - assets/RiveAssets/
+
+  fonts:
+    - family: Ubuntu
+      fonts:
+        - asset: assets/fonts/Ubuntu-Regular.ttf
+        - asset: assets/fonts/Ubuntu-Bold.ttf
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+    - family: Intel
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
